@@ -84,11 +84,12 @@ ex:BenchmarkStream
     a                     sds:Stream ;
     p-plan:wasGeneratedBy [ a            p-plan:Activity ;
                             rdfs:comment "Load in Benchmark data" ] ;
-    sds:carries           [ a sds:Member ] ;
+    sds:carries           [ a sds:Member ;
+                            sds:shape          <#TelraamShape> ] ;
     sds:dataset           [ a                  dcat:Dataset ;
                             dcat:title         "LDES to benchmark" ;
                             dcat:publisher     <http://solid.smessie.com/profile/card#me> ;
                             ldes:timestampPath prov:generatedAtTime;
                             ldes:versionOfPath dct:isVersionOf;
                             dcat:identifier    <http://${SERVER_HOSTNAME}:3000/ldes> ] ;
-                            tree:shape         <#TelraamShape> .
+    sds:shape             <#TelraamShape> .

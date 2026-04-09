@@ -15,18 +15,20 @@
   "author": "Ieben Smessaert",
   "license": "MIT",
   "dependencies": {
-    "@rdfjs/types": "^1.1.2",
-    "extract-cbd-shape": "^0.1.12",
-    "ldes-client": "^0.1.7",
-    "rdf-dereference": "^4.0.0",
-    "rdf-stores": "^2.1.1"
+    "@rdfjs/types": "^2.0.1",
+    "extract-cbd-shape": "^0.1.15",
+    "ldes-client": "^0.3.2",
+    "member-extraction-algorithm": "^0.0.1",
+    "rdf-dereference": "^5.0.0",
+    "rdf-stores": "^2.2.0",
+    "strong-type": "^1.1.0"
   },
   "devDependencies": {
     "@treecg/types": "^0.4.6",
-    "ldes-evaluation-runner-client": "^1.1.0",
-    "ldes-evaluation-runner-orchestrator": "^1.1.2",
+    "ldes-evaluation-runner-client": "^1.1.1",
+    "ldes-evaluation-runner-orchestrator": "^1.1.6",
     "ts-node": "^10.9.2",
-    "tsc-alias": "^1.8.10",
-    "typescript": "^5.5.4"
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.9.3"
   }
 }
