@@ -9,7 +9,7 @@ for env_file in "$ENV_DIR_TELRAAM_REPLICATION"/*.env; do
 
     out_file="$OUT_DIR_TELRAAM_REPLICATION/${base_name}.json"
 
-    NODE_OPTIONS=--max-old-space-size=20480 npx ldes-evaluation-runner-orchestrator "$env_file" "$out_file" "$SERVER_HOSTNAME"
+    NODE_OPTIONS=--max-old-space-size=14336 npx ldes-evaluation-runner-orchestrator "$env_file" "$out_file" "$SERVER_HOSTNAME"
 
     docker compose -f node_modules/ldes-evaluation-runner-orchestrator/docker-compose.yml down
 done
@@ -24,7 +24,7 @@ for env_file in "$ENV_DIR_DCAT_SWEDEN_REPLICATION"/*.env; do
 
     out_file="$OUT_DIR_DCAT_SWEDEN_REPLICATION/${base_name}.json"
 
-    NODE_OPTIONS=--max-old-space-size=20480 npx ldes-evaluation-runner-orchestrator "$env_file" "$out_file" "$SERVER_HOSTNAME"
+    NODE_OPTIONS=--max-old-space-size=14336 npx ldes-evaluation-runner-orchestrator "$env_file" "$out_file" "$SERVER_HOSTNAME"
 
     docker compose -f node_modules/ldes-evaluation-runner-orchestrator/docker-compose.yml down
 done
@@ -39,7 +39,7 @@ for env_file in "$ENV_DIR_MARINE_REGIONS_REPLICATION"/*.env; do
 
     out_file="$OUT_DIR_MARINE_REGIONS_REPLICATION/${base_name}.json"
 
-    NODE_OPTIONS=--max-old-space-size=20480 npx ldes-evaluation-runner-orchestrator "$env_file" "$out_file" "$SERVER_HOSTNAME"
+    NODE_OPTIONS=--max-old-space-size=14336 npx ldes-evaluation-runner-orchestrator "$env_file" "$out_file" "$SERVER_HOSTNAME"
 
     docker compose -f node_modules/ldes-evaluation-runner-orchestrator/docker-compose.yml down
 done
